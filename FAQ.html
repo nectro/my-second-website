@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>hisname | home</title>
+  </head>
+  <body>
+    <!--the main website layout-->
+    <div class="header-top">
+      <img src="logo.png" class="logo" />
+      <div class="menu-holder">
+        <ul class="menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="FAQ.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header-bottom" id="header_bar"></div>
+    <div class="main" id="main-panel">
+      <div class="contents" id="info1">
+        <form>
+          <center>
+            <table class="Form">
+              <caption>
+                Ask Your Queries
+              </caption>
+              <tr>
+                <td colspan="2">
+                  <input type="text" placeholder="Name" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="text" style="width: 97%" placeholder="Phone" />
+                </td>
+                <td><input type="text" placeholder="Email" /></td>
+              </tr>
+            </table>
+            <textarea placeholder="write your problem"></textarea>
+            <input class="button" type="submit" value="submit" />
+          </center>
+        </form>
+      </div>
+    </div>
+    <div class="footer">
+      <center>
+        <i class="fab fa-facebook-square" id="f"></i>
+        <i class="fab fa-instagram" id="i"></i>
+        <i class="fab fa-twitter-square" id="t"></i>
+        <i class="fab fa-pinterest-square" id="p"></i>
+      </center>
+      <center>
+        <p>
+          <i
+            class="far fa-copyright"
+            style="
+              font-size: 12px;
+              margin: 0px;
+              color: rgba(255, 255, 255, 0.315);
+            "
+          ></i
+          >2020 Copyright:PersonalTimes.xyz
+        </p>
+      </center>
+    </div>
+    <script>
+      //making the movable scrollbar
+      var header = document.getElementById("header_bar");
+      var main = document.getElementById("main-panel");
+      var max = header.offsetTop;
+
+      window.onscroll = () => {
+        if (window.pageYOffset > max) {
+          header.classList.add("header-bottom-sticked");
+          main.style.marginTop = "40px";
+        } else {
+          header.classList.remove("header-bottom-sticked");
+          main.style.marginTop = "0px";
+        }
+      };
+
+      /*window.onscroll = function () {
+        myFunction();
+      };
+
+      var header = document.getElementById("header_bar");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("header-bottom-sticked");
+        } else {
+          header.classList.remove("header-bottom-sticked");
+        }
+      }*/
+    </script>
+  </body>
+</html>
