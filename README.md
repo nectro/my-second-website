@@ -1,4 +1,6 @@
 # my-second-website
+^check out this site(https://nectro.github.io/my-second-website/)
+
 ^this is my second website which is written is HTML, CSS and little bit of Javascript.
 
 ^Its name is Personal Times.
